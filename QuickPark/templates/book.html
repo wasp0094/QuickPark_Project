@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://drive.google.com/thumbnail?id=1TSfV-U84izgZyPA9dYDBRZ0BwSMxkjmx" />
+    <title>Book Now</title>
+</head>
+<style>
+    body {
+        font-family: "Nunito", sans-serif;
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: auto;
+        padding: auto;
+    }
+    
+    div img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-image: linear;
+        position: relative;
+    }
+    
+    .box {
+        padding: 30px 60px;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+        font-family: "Nunito", sans-serif;
+        background-color: rgba(247, 242, 242, 0.753);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; */
+    }
+    
+    .heading {
+        font-size: 20px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    
+    #user_name,
+    #carNum,
+    #select {
+        border-radius: 4px;
+        border: 1px solid rgb(184, 182, 182);
+        width: 300px;
+        padding: 15px;
+        height: 50px;
+        background-color: #f5f5f5;
+    }
+    
+    #submit {
+        background-color: steelblue;
+        border-radius: 4px;
+        border: none;
+        width: 300px;
+        height: 50px;
+        outline: none;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 15px;
+        color: white;
+    }
+    
+    #btn {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .box .heading {
+        font-size: 28px;
+        padding-bottom: 25px;
+    }
+    
+    #forgot a {
+        font-size: 14px;
+        color: steelblue;
+    }
+    
+    #reg a {
+        font-size: 14px;
+        color: steelblue;
+    }
+    
+    #forgot {
+        text-align: right;
+    }
+    
+    .check {
+        margin-right: 66px;
+    }
+    
+    .check input {
+        vertical-align: middle;
+    }
+    
+    #reg {
+        padding: 20px;
+        text-align: center;
+        padding-top: 40px;
+    }
+    
+    #name,
+    #car,
+    #book {
+        padding-bottom: 15px;
+    }
+    
+    .block {
+        display: flex;
+        font-size: 14px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+    }
+    
+    @media screen and (max-width: 426px) {
+        body {
+            margin-left: 10%;
+        }
+        .box {
+            height: 100%;
+            background-color: white;
+            box-shadow: none;
+            position: absolute;
+            padding-top: 20%;
+        }
+        .header img {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 321px) {
+        .box {
+            margin-left: 14%;
+            padding-top: 30%;
+        }
+    }
+    
+    @media screen and (min-width: 321px) and (max-width: 376px) {
+        .box {
+            margin-left: 3%;
+        }
+        #forgot {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+        }
+        .check {
+            margin: 0px;
+        }
+    }
+    
+    @media screen and (min-width: 376px) and (max-width: 426px) {
+        .box {
+            padding-left: 11%;
+        }
+        #forgot {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+        }
+        .check {
+            margin: 0px;
+        }
+    }
+    
+    @media screen and (min-width: 426px) and (max-width: 769px) {
+        .box {
+            padding-left: 7%;
+            padding-top: 5%;
+        }
+        #forgot {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+        }
+        .check {
+            margin: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div class="header">
+        <!-- <img src="https://cdn.pixabay.com/photo/2017/09/01/20/18/multi-storey-car-park-2705368_960_720.jpg" alt=""> -->
+        <img src="https://images.pexels.com/photos/1756957/pexels-photo-1756957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+    </div>
+    <div class="box">
+        <div class="heading"><b>Book Your Slot</b></div>
+        <div class="login">
+            <!-- <form id="login" action="login.python"> -->
+
+            <form action="" method="get">
+                <!-- {% csrf_token % } -->
+                <label for="user_name" class="block">User Name</label>
+                <div id="name">
+                    <input placeholder="Enter Name" type="text" name="user_name" id="user_name" required="required" />
+                </div>
+
+                <label for="user_name" class="block">Vehicle Number</label>
+                <div id="car">
+                    <input placeholder="Enter Vehicle Number" type="text" name="carNum" id="carNum" required="required" />
+                </div>
+
+                <label for="user_name" class="block">Select Location</label>
+                <div id="book">
+                    <select class="bookSlot" id="select" required="required" name="book">
+              >
+              <option value="" disabled="" selected="">Delhi</option>
+              <option value="1">Ambience Mall, Vasant Kunj</option>
+              <option value="2">City Centre, Dwarka, New Delhi</option>
+              <option value="3">City Centre, Rohini, New Delhi</option>
+              <option value="4">D Mall, New Delhi</option>
+              <option value="5">DLF Avenue, Saket</option>
+              <option value="6">DLF Emporio, Vasant Kunj</option>
+              <option value="7">Metro Walk, Rohini</option>
+              <option value="8">MGF City Square, Delhi</option>
+              <option value="9">Pacific Mall, New Delhi</option>
+              <option value="10">Unity One, New Delhi</option>
+            </select>
+                </div>
+
+                <div id="btn">
+                    <button id="submit" onclick="myFunction()" required="required" >
+              Book Now
+            </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            alert("Your booking has been confirmed!");
+        }
+    </script>
+</body>
+
+
+</html>

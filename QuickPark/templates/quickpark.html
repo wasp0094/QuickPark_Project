@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QuickPark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://drive.google.com/thumbnail?id=1TSfV-U84izgZyPA9dYDBRZ0BwSMxkjmx"
+    />
+    <link rel="stylesheet" href="quickpark.css" />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: rgb(73, 71, 71);
+}
+.pimg1 .border {
+  font-family: "Architects Daughter", cursive;
+  font-family: "Kaushan Script", cursive;
+  font-size: 7vw;
+  letter-spacing: 5px;
+  text-transform: none;
+}
+.mail {
+  text-decoration: none;
+  color: rgb(73, 71, 71);
+}
+.mail:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.navigation {
+  display: flex;
+}
+.small-link {
+  display: none;
+}
+/*NAVIGATION-BAR*/
+.section1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+  background-color: rgba(17, 17, 17, 0.801);
+  opacity: 0.9;
+  border-bottom: 0.5px solid white;
+}
+.pimg1 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.toHome {
+  width: 100%;
+  margin-left: 0.4rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  top: 22.1rem;
+  position: fixed;
+  border: 1px solid steelblue;
+  background-color: steelblue;
+  border-radius: 50%;
+  padding: 1px 2px;
+}
+
+.left,
+.right {
+  cursor: pointer;
+}
+.section1 a {
+  /*header ke inside links*/
+  margin-right: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none; /*removes underline*/
+  font-size: 16px;
+}
+.section1 a:hover {
+  color: rgb(103, 146, 180);
+}
+.right {
+  display: flex;
+  align-items: center;
+  min-width: 12vw;
+  justify-content: space-between;
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5 {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url("https://www.bnim.com/sites/default/files/project_images_new/entry-plaza-parking-structure-bnim-b97284b3-591f-42e4-88ce-0e01d3439aa1.jpg");
+  height: 100%;
+}
+
+.pimg2 {
+  background-image: url("https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 400px;
+}
+.pimg3 {
+  background-image: url("https://images.pexels.com/photos/4350084/pexels-photo-4350084.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 400px;
+}
+.pimg4 {
+  background-image: url("https://www.smtusa.com/uploads/faqs.jpg");
+  min-height: 400px;
+}
+.pimg5 {
+  background-color:steelblue;
+  opacity: 0.3;
+  min-height: 200px;
+  width: 100%;
+}
+.pimg5 .ptext span h6 {
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+.section-dark {
+  background-color: 3282e34;
+  color: rgb(73, 71, 71);
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: rgba(17, 17, 17, 0.801);
+  border-radius: 10%;
+  color: #fff;
+  padding: 20px;
+}
+.ptext .border.trans {
+  background-color: transparent;
+}
+.heading {
+  color: steelblue;
+}
+.email {
+  font-size: 3rem;
+  color: steelblue;
+}
+
+.footer1,
+.footer2 {
+  background-color: rgb(184, 177, 177);
+}
+.footer2 {
+  height: 5.5rem;
+}
+.footer2 p {
+  text-align: center;
+}
+.social-handles {
+  margin-left: 45%;
+  height: 5rem;
+}
+.social-handles a {
+  text-decoration: none;
+}
+.social-profile img {
+  margin-top: 1.5rem;
+  width: 60px;
+  opacity: 0.5;
+  /*padding-left: 18px;*/
+  padding-left: 20px;
+  text-align: center;
+}
+.footer1 {
+  background-color: rgb(184, 177, 177);
+}
+
+@media screen and (max-width: 587px) {
+  .link-hide {
+    display: none;
+  }
+  .section1 a {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1981px) {
+  .section1 a {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 426px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg4 {
+    height: 300px;
+  }
+  .pimg5 {
+    height: 300px;
+  }
+  .pimg1 .ptext {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    font-size: 15px;
+  }
+  .pimg5 .ptext span h6 {
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+  .section {
+    padding: 50px 25px;
+  }
+  .social-handles {
+    margin-left: 27%;
+    height: 5rem;
+  }
+  .social-profile img {
+    margin-top: 1.5rem;
+    width: 45px;
+    opacity: 0.5;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  .social-handles {
+    margin-left: 29%;
+    height: 5rem;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 426px) {
+  .social-handles {
+    margin-left: 29.5%;
+    height: 5rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .social-handles {
+    margin-left: 36.8%;
+    height: 5rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .social-handles {
+    margin-left: 36.8%;
+    height: 5rem;
+  }
+}
+@media screen and (min-width: 729px) and (max-width: 1025px) {
+  .social-handles {
+    margin-left: 39%;
+    height: 5rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1441px) {
+  .social-handles {
+    margin-left: 45%;
+    height: 5rem;
+  }
+  .footer2 p {
+    text-align: center;
+  }
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="section1">
+      <div id="home" class="left">
+        <a href="#home"
+          ><span class="material-icons" style="color: aliceblue">
+            home
+          </span></a
+        >
+      </div>
+      <div class="right">
+        <a class="link link-hide" href="#about">About</a>
+        <a class="link link-hide" href="#faqs">FAQs</a>
+        <a class="link link-hide" href="#contact">Contact Us</a>
+        <a class="link" href="signin" target="_blank">Sign In</a>
+      </div>
+    </div>
+
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border"> QuickPark </span>
+      </div>
+    </div>
+
+    <section class="section section-dak">
+      <h2 class="heading">Why QuickPark?</h2>
+      <p>
+        QuickPark is a smart parking application which is here to help make parking easier within communities while also connecting you to shopping malls, local restraunts and movie theatres. We have built a platform that is the total one stop shop for parking. With the click of the button, you can now instantly book a convinient, safe and legitimate parking spots for your vehicles. With our user-friendly and easy to use map interface, choose from thousands of parking spaces available on an hourly/daily or rolling monthly basis. Receive instant confirmation and parking instructions. </br> No more parking worries, no more driving around in circles. Turn up and park following your provided instructions for a hassle-free experience.
+      </p>
+    </section>
+
+    <div class="pimg2">
+      <div class="ptext">
+        <span class="border trans">  </span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2 class="heading" id="about">About Us</h2>
+      <p>
+        Our mission here is simple, to connect with people and help make parking easier. Living in India, we all know about miseries faced by vehicles owners while looking for an optimal parking spot. After much research, our team of four developers from India, came to a conclusion that there was a need for an India specific smart parking application. Henceforth, we came up with the idea of QuickPark.    
+      </p>
+    </section>
+
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans">  </span>
+      </div>
+    </div>
+    <section class="section section-dark">
+      <h2 id = "faqs" class="heading">FAQs</h2>
+      <!--Add how does it work-->
+        <h3>How does QuickPark works?</h3><p>Search your desired location and check the availabilty with a single click. Confirm your booking and you are good to go. It's that simple!</p> <br>
+        <h3>What happens after I book a space?</h3>
+
+<p>We will inform the owner of the space and automatically send you the full space address and any extra details.</p>
+    </br>
+<h3>Will my booked space be available?</h3>
+<p>Yes - we only confirm bookings in line with the availability set by the space owner or operator.</p>
+  </br>
+<h3>Do I need to enter/leave at the times booked?</h3>
+
+<p>You can arrive and leave any time within the booked window.</p>
+
+        <h4 style="color: steelblue; font-size: 19px; padding-top: 12px;">Still Have A Query?</h4>
+        <p>Drop a mail at: <a class="mail" href="mailto:someone@example.com">Email Us</a></p>
+
+    </section>
+
+    <div class="pimg4">
+      <div class="ptext">
+        <span class="border trans"> </span>
+      </div>
+    </div>
+    <section class="section section-dark">
+      <h2 class="heading" id="contact">Contact Us</h2>
+      <p>
+        Liked our initiative? You can help our service grow by sharing your suggestions.</br> Feel free to drop your feedback and comments. <br>We would love to hear from you!
+      </p>
+      <a href="mailto:someone@example.com"><span class="email material-icons">
+        email
+        </span></a>
+    </section>
+
+    <div class="pimg5">
+      <div class="ptext">
+        <span>
+          <h6 style="color: white
+          ;">Thank You For Visiting Our Site!</h6>
+        </span>
+      </div>
+    </div>
+
+    <footer>
+      <footer class="footer1">
+        <!--Social Handles-->
+        <div class="social-handles">
+          <a class="social-profile" href="mailto:someone@example.com">
+            <img src="http://cdn.onlinewebfonts.com/svg/img_489898.png" alt="Email">
+          </a>
+          <a class="social-profile" href="#">
+            <img src="http://clipartmag.com/images/facebook-black-and-white-logo-3.png" alt="Facebook">
+          </a>
+          <a class="social-profile" href="#">
+            <img src="https://www.pikpng.com/pngl/b/31-313040_1200-x-1200-8-twitter-logo-png-transparent.png" alt="Twitter">
+          </a>
+        </div>
+      </footer>
+      <footer class="footer2">  
+        <!--Copyright-->
+        <p class="copy1">ACE Technologies LLC 2019. All Rights Reserved.</p>
+        <p class="copy2">Also reach us directly at info@QuickPark.com</p>
+      </footer>
+    </footer>
+  </body>
+</html>

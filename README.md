@@ -37,4 +37,9 @@
 - Images  - [Pexels](https://www.pexels.com/)
 - Icons and font - [Google Font](https://fonts.google.com/) 
 
+### Contributors
+- [https://github.com/tiasaxena](https://github.com/tiasaxena)
+- [https://github.com/Swati002](https://github.com/Swati002)
+- [https://github.com/topguns837](https://github.com/topguns837)
+
 ![collage](https://user-images.githubusercontent.com/90551491/136579654-afccb77c-c0d5-406f-8ae8-4108cab4dd27.png)
